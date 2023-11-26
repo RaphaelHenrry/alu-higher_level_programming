@@ -23,4 +23,4 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         '''Return info about the Rectangle instance
         '''
-        return f"[Rectangle] {self.__width}/{self.__height}"
+        return f"[Rectangle] {self.__width}/{self.__height}i"
