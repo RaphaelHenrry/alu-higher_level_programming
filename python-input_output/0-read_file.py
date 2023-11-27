@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-""" Function that returns the list of available
-    attributes and methods of an object
-"""
+'''Defines a function called read_file
+'''
 
 
-def lookup(obj):
-    """ Function that returns the list of available
-        attributes and methods of an object
-    """
+def read_file(filename=""):
+    '''Reads a file and prints it out
 
-    return dir(obj)
+    Args:
+       filename (dir): The path to the file being read
+
+    Return: none
+    '''
+    with open(filename) as f:
+        for line in f:
+            print(line, end="")
